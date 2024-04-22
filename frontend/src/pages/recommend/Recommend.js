@@ -53,8 +53,8 @@ export default function Recommend(){
               <h1 className="mt-5 mb-4" style={{color: 'var(--gray-color)', fontSize: '30px'}}>Recommend for you</h1>
               <div className="popular-content">
                 {
-                  listData.map((item) => (
-                    <div key={item.id}>
+                  listData.map((item,index) => (
+                    (index <10)&&<div key={item.id}>
                       <CardVBox id={item.id} img={item.album.images[0].url} name={item.name} singer={item.artists[0].name}></CardVBox>
                     </div>
                   ))

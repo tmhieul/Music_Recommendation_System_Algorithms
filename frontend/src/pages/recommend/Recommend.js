@@ -10,7 +10,7 @@ export default function Recommend(){
     useEffect(() => {
       if(localStorage.getItem("userId")){
         const UID = localStorage.getItem("userId");
-        axios.post('http://localhost:5000/api/collaborative-filtering-recommend',
+        axios.post('http://47.129.1.22:5000/api/collaborative-filtering-recommend',
         {user_id: UID}
         )
         .then(res => {
@@ -29,7 +29,7 @@ export default function Recommend(){
       }else{
         const urlParams = new URLSearchParams(window.location.search);
         const id = urlParams.get('id');
-        axios.post('http://localhost:5000/api/content-base-recommend',
+        axios.post('http://47.129.1.22:5000/api/content-base-recommend',
         {song_id: id}
         )
         .then(res => {

@@ -10,8 +10,8 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-df = pd.read_csv('../data/user_ratings.csv')
-songs_df = pd.read_csv('../data/pop_songs.csv', usecols=['id', 'name', 'cover_url'])
+df = pd.read_csv('user_ratings.csv')
+songs_df = pd.read_csv('pop_songs.csv', usecols=['id', 'name', 'cover_url'])
 
 
 def get_song_url(song_id):
@@ -180,20 +180,3 @@ df['user_id_number'] = df['user_id'].astype('category').cat.codes.values
 df['song_id_number'] = df['song_id'].astype('category').cat.codes.values
 
 Y_data = df[['user_id_number', 'song_id_number', 'rating']].values
-
-
-# # User-based Collaborative Filtering
-# user_based_cf = CF(Y_data, k = 5, uuCF = 1)
-# user_based_cf.fit()
-# user_id = 'F6LSRT'
-
-# user_id_number = df[df.user_id == user_id].user_id_number.values[0]
-# user_based_cf.print_recommendation(user_id_number, number=18)
-
-
-# # Item-based Collaborative Filtering
-# item_based_cf = CF(Y_data, k = 5, uuCF = 0)
-# item_based_cf.fit()
-# song_id = '18HFH05MB3xeR8jSPiGVpG'
-# song_id_number = df[df.song_id == song_id].song_id_number.values[0]
-# item_based_cf.print_recommendation(song_id_number)

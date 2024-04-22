@@ -40,8 +40,3 @@ class ContentBasedRecommender:
         # Return the top 10 most similar songs
         return self.songs_df.iloc[song_indices][['id']]
 
-
-# song_recommender = ContentBasedRecommender('../data/pop_songs.csv')
-# song_id = '18HFH05MB3xeR8jSPiGVpG'
-# recommended_songs = song_recommender.get_recommendations(song_id)
-# print(recommended_songs)

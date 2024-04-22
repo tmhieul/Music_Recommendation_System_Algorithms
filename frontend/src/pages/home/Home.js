@@ -28,7 +28,14 @@ export default function Home(){
       .then(res => {
           setListSong(res.data.albums.items);
       })
-      .catch(err => console.log(err));
+      .catch(err => {
+        //console.log(err.response.data.error);
+        if(err.response.data.error.status == 401){
+          //console.log("token")
+          localStorage.removeItem("token");
+          window.location.reload();
+        }
+      });
   }
 
     useEffect(() => {

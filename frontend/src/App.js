@@ -37,7 +37,6 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  setInterval(() => {localStorage.removeItem("token"); getKey();}, 1800000)
   return (
     <DndProvider backend={HTML5Backend}>
       <RouterProvider router={router}>

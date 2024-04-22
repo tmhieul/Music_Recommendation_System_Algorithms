@@ -11,7 +11,7 @@ CORS(app)  # Enable CORS for all routes
 
 
 # Instantiate the content-based recommender object
-content_based_recommender = ContentBasedRecommender('../data/pop_songs.csv')
+content_based_recommender = ContentBasedRecommender('pop_songs.csv')
 
 @app.route('/api/content-base-recommend', methods=['POST'])
 def content_based_recommend_songs():
@@ -20,7 +20,7 @@ def content_based_recommend_songs():
         song_id = data.get('song_id')
 
         # Instantiate the content-based recommender object
-        content_based_recommender = ContentBasedRecommender('../data/pop_songs.csv')
+        content_based_recommender = ContentBasedRecommender('pop_songs.csv')
 
         # Get recommendations from the content-based recommender
         recommended_songs = content_based_recommender.get_recommendations(song_id)
@@ -41,7 +41,7 @@ def content_based_recommend_songs():
 def collaborative_filtering_recommend_songs():
     try:
         # Load data and initialize collaborative filtering recommender
-        df = pd.read_csv('../data/user_ratings.csv')
+        df = pd.read_csv('user_ratings.csv')
         df['user_id_number'] = df['user_id'].astype('category').cat.codes.values
         df['song_id_number'] = df['song_id'].astype('category').cat.codes.values
         Y_data = df[['user_id_number', 'song_id_number', 'rating']].values

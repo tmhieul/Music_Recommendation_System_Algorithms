@@ -1,0 +1,32 @@
+.banner {
+    background-size: cover;
+    height: 400px;
+    filter: blur(16px);
+}
+
+.detail-of-song {
+    background-color: transparent !important;
+    margin-left: 5rem;
+    h1 {
+        background-color: transparent !important;
+        color: white;
+    }
+}
+
+.content-detail {
+    background-color: transparent !important;
+    display: flex;
+    align-items: center;
+    transform: translateY(-32rem) translateX(6rem);
+}
+
+.avt-song {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+}
+.btn-play{
+    background-color: transparent !important;
+    text-align: center;
+    transform: translateY(-28rem);
+}

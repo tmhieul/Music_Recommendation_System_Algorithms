@@ -1,0 +1,25 @@
+.card-vbox {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 2rem;
+    width: calc(2rem + 2rem + 170px);
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+.card-vbox:hover {
+    transform: scale(1.06);
+}
+
+.each-img>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 170px;
+    border-radius: 10px;
+}
+
+.each-img, h2{
+    background-color: var(--secondary-color);
+}

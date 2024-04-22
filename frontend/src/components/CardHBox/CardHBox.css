@@ -1,0 +1,17 @@
+.card-hbox{
+    display: flex;
+    align-items: center;
+    background-color: var(--theme-color);
+    transition: all ease-in .3s;
+    cursor: pointer;
+}
+
+.card-hbox:hover{
+    transform: scale(1.06);
+}
+
+.each-img-newsong>div {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px !important;
+}

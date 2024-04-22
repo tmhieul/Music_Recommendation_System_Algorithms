@@ -1,0 +1,16 @@
+.other-song{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.item-other{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-18rem);
+}
+.item-other h1{
+    font-size: 96px;
+    margin-right: 2rem;
+}

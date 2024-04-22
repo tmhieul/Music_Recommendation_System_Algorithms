@@ -1,0 +1,30 @@
+.header{
+    border-bottom: 1px solid var(--primary-color);
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .75rem;
+    margin-top: .75rem;
+}
+.left-section{
+    display: flex;
+    align-items: baseline;
+}
+.logo{
+    color: var(--primary-color);
+    font-size: 32px;
+    cursor: pointer;
+}
+.menu-item-text{
+    color: var(--gray-color);
+    font-size: 20px;
+    margin-left: 4rem;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    background-color: var(--theme-color);
+}
+.menu-item-text:hover{
+    color: var(--primary-color);
+}

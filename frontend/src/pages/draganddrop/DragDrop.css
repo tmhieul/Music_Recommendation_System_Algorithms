@@ -1,0 +1,53 @@
+.list-song{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.add-song{
+    border: 4px var(--primary-color) dashed;
+    color: var(--primary-color);
+    border-radius: 10px;
+    font-size: 96px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--primary-color);
+    /* Màu nền của phần đường đi */
+}
+
+.drag-section{
+    position: relative;
+    left: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 55%;
+    height: calc(100vh - 65px);
+    scrollbar-width: 2px;
+}
+
+.drop-section{
+    position: fixed;
+    right: 0;
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: calc(100vh - 65px);
+}
+
+.song-dropped{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.drop-section .btn-primary {
+    position: fixed;
+    bottom: 3rem;
+    right: 8rem;
+}

@@ -54,10 +54,10 @@ In this project, I implemented and experimented with different recommendation st
 ---
 
 ## 🚀 How to Run
+````
 1. Clone the repository:
    ```bash
    git clone https://github.com/tmhieul/Music_Recommendation_System_Algorithms.git
-````
 
 2. Navigate to the project directory:
 
@@ -125,3 +125,4 @@ If you want next:
 
 Just tell me 👌
 ```
+

@@ -112,7 +112,7 @@ GitHub: [https://github.com/tmhieul](https://github.com/tmhieul)
 ---
 
 ## 🔥 Why this README is strong
-- Explains **what**, **why**, and **how**
+- Explains "what", "why", and "how"
 - Shows algorithmic understanding (not just “I ran a notebook”)
 - Sounds right for **internships / junior data roles**
 - Easy to extend later with metrics, charts, or datasets
@@ -125,4 +125,5 @@ If you want next:
 
 Just tell me 👌
 ```
+
 

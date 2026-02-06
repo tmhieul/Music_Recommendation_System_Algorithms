@@ -106,24 +106,3 @@ GitHub: [https://github.com/tmhieul](https://github.com/tmhieul)
 ---
 
 ⭐ If you find this project interesting, feel free to explore or leave feedback!
-
-```
-
----
-
-## 🔥 Why this README is strong
-- Explains "what", "why", and "how"
-- Shows algorithmic understanding (not just “I ran a notebook”)
-- Sounds right for **internships / junior data roles**
-- Easy to extend later with metrics, charts, or datasets
-
-If you want next:
-- A **more Data Engineer–flavored version**
-- A **shorter README** (some recruiters prefer concise)
-- Help adding **evaluation + visuals**
-- Rewrite your notebook comments to match this quality
-
-Just tell me 👌
-```
-
-
